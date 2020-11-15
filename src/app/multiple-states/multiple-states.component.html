@@ -1,0 +1,25 @@
+<div>
+    <p>
+        {{ count | async }}
+    </p>
+</div>
+
+<div>
+    <button (click)="increment()"> aumentar </button>
+</div>
+<br>
+<div>
+    <button (click)="decrement()"> diminuir </button>
+</div>
+<br>
+<div>
+    <p>
+        Oi {{ name | async }}
+    </p>
+</div>
+<br>
+<div>
+    <input type="text" #inputName placeholder="digite um novo nome">
+    <br>
+    <button (click)="changeName(inputName.value)">mudar nome</button>
+</div>
